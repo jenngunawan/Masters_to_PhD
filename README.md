@@ -3,7 +3,7 @@
 Thank you for your interest! As you may know, I'm on medical leave from Duke University and I'm more than invested in my journey towards Academia. Between now (September 2023) and application deadlines (December 2023), I plan on doing the following:
 
 1. RA work for Professor Cam Harvey (Duke University)
-2. Read books and research papers ([Python to HTML Flask app](http://jenngunawan.pythonanywhere.com/))[^1] [^2]
+2. Read books and research papers ([Python to HTML Flask app](http://jenngunawan.pythonanywhere.com/))[^1]<sup>,</sup>[^2]
 4. Complete University of Chicago's Financial Mathematics class
 5. Complete and log certificate programs (e.g. Harvard's CS-50)
 6. Complete a supplementary file for my statement of purpose
