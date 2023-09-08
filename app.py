@@ -17,7 +17,7 @@ def load_data_from_csv(file_path):
             for row in reader:
                 data.append(row)
     except FileNotFoundError:
-        pass  # The file doesn't exist yet
+        pass  
     return data
 
 # Save data to CSV files
@@ -38,53 +38,41 @@ library = {
 def index():
     return render_template('index.html', library=library)
 
-@app.route('/add_book', methods=['POST'])
-def add_book():
-    # ... (same code as before)
-    author = request.form['author']
-    year = request.form['year']
-    title = request.form['title']
-    publisher = request.form.get('publisher', '')
-    date_read = datetime.strptime(request.form['date_read'], '%Y-%m-%d')
-    summary = request.form.get('summary', '')
-
-    book = {
-        'author': author,
-        'year': year,
-        'title': title,
-        'publisher': publisher,
-        'date_read': date_read,
-        'summary': summary,
-    }
-    library['books'].append(book)
-    library['books'].sort(key=lambda x: x['date_read'], reverse=True)
-
-    # Save the updated book data to the CSV file
-    save_data_to_csv(library['books'], books_csv_path)
-
-    return redirect(url_for('index'))
-
-@app.route('/add_paper', methods=['POST'])
-def add_paper():
-    # ... (same code as before)
+@app.route('/add_entry', methods=['POST'])
+def add_entry():
+    entry_type = request.form['entry_type']
     author = request.form['author']
     year = request.form['year']
     title = request.form['title']
     date_read = datetime.strptime(request.form['date_read'], '%Y-%m-%d')
     summary = request.form.get('summary', '')
 
-    paper = {
-        'author': author,
-        'year': year,
-        'title': title,
-        'date_read': date_read,
-        'summary': summary,
-    }
-    library['papers'].append(paper)
-    library['papers'].sort(key=lambda x: x['date_read'], reverse=True)
-
-    # Save the updated paper data to the CSV file
-    save_data_to_csv(library['papers'], papers_csv_path)
+    if entry_type == 'book':
+        publisher = request.form.get('publisher', '')
+        entry = {
+            'author': author,
+            'year': year,
+            'title': title,
+            'publisher': publisher,
+            'date_read': date_read,
+            'summary': summary,
+        }
+        library['books'].append(entry)
+        library['books'].sort(key=lambda x: x['date_read'], reverse=True)
+        save_data_to_csv(library['books'], books_csv_path)
+    elif entry_type == 'paper':
+        publisher = request.form.get('publisher', '')
+        entry = {
+            'author': author,
+            'year': year,
+            'title': title,
+            'publisher': publisher,
+            'date_read': date_read,
+            'summary': summary,
+        }
+        library['papers'].append(entry)
+        library['papers'].sort(key=lambda x: x['date_read'], reverse=True)
+        save_data_to_csv(library['papers'], papers_csv_path)
 
     return redirect(url_for('index'))
 
