@@ -13,4 +13,4 @@ Between now (September 2023) and application deadlines (December 2023), I plan o
 Thank you again for your interest, and I hope that you'll find me as a competitive candidate for your school.
 
 P.S. I will continue to update this repository and hyperlink this README.md file as time progresses.
-[^1]: Files in this repository: (1) [app.py](app.py), [(2) index.html](index.html), [(3) style.css](stle.css)
+[^1]: Files in this repository: (1) [app.py](app.py), (2) [index.html](index.html), (3) [style.css](stle.css)
