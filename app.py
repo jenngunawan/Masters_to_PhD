@@ -5,8 +5,8 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Define the file paths for the CSV files
-books_csv_path = 'books.csv'
-papers_csv_path = 'papers.csv'
+books_csv_path = 'data/books.csv'
+papers_csv_path = 'data/papers.csv'
 
 # Load existing data from CSV files
 def load_data_from_csv(file_path):
