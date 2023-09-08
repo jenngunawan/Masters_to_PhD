@@ -13,8 +13,6 @@
         <button class="tablinks" onclick="openTab(event, 'BookList')">Book List</button>
         <button class="tablinks" onclick="openTab(event, 'PaperList')">Paper List</button>
     </div>
-
-<!-- Inside the "Add Book/Paper" section -->
 <div id="AddEntry" class="tabcontent">
     <h2>Add Book or Research Paper</h2>
     <form method="POST" action="/add_entry">
@@ -45,8 +43,7 @@
         <input type="submit" value="Add Entry">
     </form>
 </div>
-
-
+    
     <div id="BookList" class="tabcontent">
         <h2>Book List</h2>
         <table>
@@ -118,7 +115,6 @@
             evt.currentTarget.className += " active";
         }
 
-        // Set the default tab
         document.getElementsByClassName("tablinks")[0].click();
     </script>
 </body>
