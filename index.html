@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1>Jenn's Reading List</h1>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Books')">Add Book</button>
-        <button class="tablinks" onclick="openTab(event, 'Papers')">Add Research Paper</button>
+        <button class="tablinks" onclick="openTab(event, 'AddEntry')">Add Book / Research Paper</button>
         <button class="tablinks" onclick="openTab(event, 'BookList')">Book List</button>
         <button class="tablinks" onclick="openTab(event, 'PaperList')">Paper List</button>
     </div>
 
+<!-- Inside the "Add Book/Paper" section -->
+<div id="AddEntry" class="tabcontent">
+    <h2>Add Book or Research Paper</h2>
+    <form method="POST" action="/add_entry">
+        <label for="entry_type">Entry Type:</label>
+        <select id="entry_type" name="entry_type" required>
+            <option value="book">Book</option>
+            <option value="paper">Research Paper</option>
+        </select><br>
 
-
-
-    <!-- Inside the "Add Book" section -->
-<div id="Books" class="tabcontent">
-    <h2>Add Book</h2>
-    <form method="POST" action="/add_book">
         <label for="author">Author Last Name(s):</label>
         <input type="text" id="author" name="author" required><br>
 
@@ -39,30 +42,7 @@
         <label for="summary">Brief Summary (optional):</label>
         <textarea id="summary" name="summary" rows="4"></textarea><br>
 
-        <input type="submit" value="Add Book">
-    </form>
-</div>
-
-<!-- Inside the "Add Research Paper" section -->
-<div id="Papers" class="tabcontent">
-    <h2>Add Research Paper</h2>
-    <form method="POST" action="/add_paper">
-        <label for="author">Author Last Name(s):</label>
-        <input type="text" id="author" name="author" required><br>
-
-        <label for="year">Year:</label>
-        <input type="text" id="year" name="year" required><br>
-
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required><br>
-
-        <label for="date_read">Date Read:</label>
-        <input type="date" id="date_read" name="date_read" required><br>
-
-        <label for="summary">Brief Summary (optional):</label>
-        <textarea id="summary" name="summary" rows="4"></textarea><br>
-
-        <input type="submit" value="Add Research Paper">
+        <input type="submit" value="Add Entry">
     </form>
 </div>
 
@@ -85,7 +65,7 @@
                 <tr>
                     <td>{{ book.author }}</td>
                     <td>{{ book.year }}</td>
-                    <td>{{ book.title }}</td>
+                    <td><a href="https://scholar.google.com/scholar?q={{ book.title }}" target="_blank">{{ book.title }}</a></td>
                     <td>{{ book.publisher }}</td>
                     <td>{{ book.date_read.strftime('%Y-%m-%d') }}</td>
                     <td>{{ book.summary }}</td>
@@ -103,6 +83,7 @@
                     <th>Author</th>
                     <th>Year</th>
                     <th>Title</th>
+                    <th>Publisher</th>
                     <th>Date Read</th>
                     <th>Summary</th>
                 </tr>
@@ -113,6 +94,7 @@
                     <td>{{ paper.author }}</td>
                     <td>{{ paper.year }}</td>
                     <td><a href="https://scholar.google.com/scholar?q={{ paper.title }}" target="_blank">{{ paper.title }}</a></td>
+                    <td>{{ paper.publisher }}</td>
                     <td>{{ paper.date_read.strftime('%Y-%m-%d') }}</td>
                     <td>{{ paper.summary }}</td>
                 </tr>
