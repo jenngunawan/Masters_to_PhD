@@ -4,7 +4,7 @@ Thank you for your interest! As you may know, I'm on medical leave from Duke Uni
 
 1. RA work for Professor Cam Harvey (Duke University)
 2. Read books and research papers ([Python to HTML Flask app](http://jenngunawan.pythonanywhere.com/))[^1]<sup>,</sup>[^2]
-4. Complete University of Chicago's Financial Mathematics class
+4. University of Chicago's MS Financial Mathematics prep course ([Linear Algebra and Python](https://finmath.uchicago.edu/admissions/prep-course/#coursework))
 5. Complete and log certificate programs (e.g. Harvard's CS-50)
 6. Complete a supplementary file for my statement of purpose
 
