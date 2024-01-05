@@ -10,6 +10,6 @@ Thank you for your interest! As you may know, I'm on medical leave from Duke Uni
 6. Complete and log certificate programs (e.g. Harvard's CS-50)
 
 
-[^1]: Asset Pricing books are from Duke University's 1st and 2nd year PhD course syllabi (notes available upon request).
+[^1]: Asset Pricing books are from Duke University's 1st and 2nd year PhD course syllabi (notes available if interested).
 [^2]: Files: (1) [app.py](app.py), (2) [index.html](index.html), (3) [style.css](style.css)
-[^3]: Deployed using pythonanywhere; book and paper list .CSV files available if interested.
+[^3]: Deployed using pythonanywhere; book and paper list (.CSV files available if interested).
