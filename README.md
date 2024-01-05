@@ -5,7 +5,7 @@ Thank you for your interest! As you may know, I'm on medical leave from Duke Uni
 1. RA work for Professor Cam Harvey (Duke University)
 2. Math and Asset Pricing self-study ([Link to Books and Selected Papers](http://jenngunawan.pythonanywhere.com/))[^1]<sup>,</sup>[^2]<sup>,</sup>[^3]
 3. Conduct academic research (2 are co-authored, 1 solo-authored)
-4. University of Chicago's Linear Algebra and Python course ([Link to Graded Coursework](http://INSERTLINK))
+4. University of Chicago's Linear Algebra and Python course ([Link to Graded Coursework](https://github.com/jenngunawan/Masters_to_PhD/tree/main/UChicago%20Linear%20Algebra))
 5. Re-write "Everything is a DCF Model" paper for sole-ownership (previously sold to firm for $500)
 6. Complete and log certificate programs (e.g. Harvard's CS-50)
 
