@@ -3,7 +3,7 @@
 Thank you for your interest! As you may know, I'm on medical leave from Duke University and I'm more than invested in my journey towards Academia. Below are some things I am doing between medical leave and application deadlines:
 
 1. RA work for Professor Cam Harvey (Duke University)
-2. Math and Asset Pricing self-study ([Link to Books and Selected Papers](http://jenngunawan.pythonanywhere.com/))[^1]<sup>,</sup>[^2],</sup>[^3]
+2. Math and Asset Pricing self-study ([Link to Books and Selected Papers](http://jenngunawan.pythonanywhere.com/))[^1]<sup>,</sup>[^2]<sup>,</sup>[^3]
 3. Conduct academic research (2 are co-authored, 1 solo-authored)
 4. University of Chicago's Linear Algebra and Python course ([Link to Graded Coursework](http://INSERTLINK))
 5. Re-write "Everything is a DCF Model" paper for sole-ownership (previously sold to firm for $500)
